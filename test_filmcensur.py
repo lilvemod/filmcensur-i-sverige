@@ -1,4 +1,4 @@
-from project import parse_args, read_film_registry, get_random_title, read_cuts_registry, get_primary_key, get_other_info, find_cuts, write_to_table, write_to_txt
+from filmcensur import parse_args, read_film_registry, get_random_title, read_cuts_registry, get_primary_key, get_other_info, find_cuts, write_to_table, write_to_txt
 import pytest
 import pandas as pd
 import os

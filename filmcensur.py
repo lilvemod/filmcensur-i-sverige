@@ -218,7 +218,7 @@ def write_to_txt(key: int, summary: str, table) -> None:
     The function takes the primary key of the movie, a summary of it and the table object with information about the cuts that were made as input.
     It writes this to a file of the same name as the primary key of the movie.
     """
-    with open(f"{key}.txt", "w") as file:
+    with open(f"{key}.txt", "w", encoding="utf-8") as file:
         file.write(f"{summary}\n{table}")
 
 

@@ -1,6 +1,6 @@
 # filmcensur-i-sverige
 
-#### Beskrivning:
+## Beskrivning:
 Programmet filmcensur.py låter användaren ta reda på information om en film som visades på bio i Sverige mellan 1911 och 2010 blev censurerad eller inte av Statens Biografbyrå.
 
 Programmet använder sig av öppna data som tillgängliggjorts av Riksarkivet, här: https://sok.riksarkivet.se/data-api/nedladdningsbara-datamangder/svensk-filmcensur
@@ -16,10 +16,26 @@ Programmet kan även köras genom kommandoradsargumentet "-" följt av ett helta
 Om inga klipp gjordes för filmen du valt så skrivs en kort sammanfattning ut till terminalen och programmet avslutas.
 Om det gjordes några klipp så får du välja om du vill spara ned sammanfattningen till en fil eller om det bara ska skrivas ut till terminalen.
 
-Tester:
-The file that contains the tests for the main program attempts to test functionality specific to the dataset and not dependencies on other libraries, such as prettytable or pandas. Most of the tests simulate some DataFrame object that should containt columns and or values that are contained within the actual dataset that the program uses. Note however that the program only works for these specific files.
+## Externa bibliotek:
+Programmet använder sig av några externa bibliotek som kan installeras med pip, dessa är:
 
-#### Om programmet
+#### pandas
+För att installera, kör
+`pip install pandas`
+
+#### prettytable
+För att installera, kör
+`pip install prettytable`
+
+#### pytest
+För att installera, kör
+`pip install pytest`
+Obs! Behövs endast för att köra tester i test_filcensur.py
+
+## Tester:
+En testfil finns med som testar de olika funktionerna som finns i filmcensur.py. De flesta av testerna simulerar de DataFrame objekt som funktionerna ska returnera.
+
+## Om programmet
 Det här programmet skrevs ursprungligen som mitt slutprojekt för kursen CS50p, Introduction to Programming with Python under 2026.
 
 
