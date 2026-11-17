@@ -6,7 +6,7 @@ Programmet filmcensur.py låter användaren ta reda på information om en film s
 Programmet använder sig av öppna data som tillgängliggjorts av Riksarkivet, här: https://sok.riksarkivet.se/data-api/nedladdningsbara-datamangder/svensk-filmcensur
 Datan tillgängliggörs genom en CC0 licens och inkluderas i detta program. Filen klipp.csv har modifierats för detta program genom att den getts en kolumn med rubriker från postbeskrivningen.
 
-Hur programmet funkar:
+#### Hur programmet funkar:
 Programmet kan köras som det är, dvs. genom `python project.py` och användaren promptas då att skriva en titel i terminalen.
 
 Programmet kan också köras genom att lägga till kommandoradsargumentet "-t" fäljt av filmens titel, som i exemplet `python project.py -t "askungen"` för att få information om filmen Askungen.
